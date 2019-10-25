@@ -1,6 +1,45 @@
+body {
+  background-image: url("./bg.jpg");
+  background-attachment: fixed;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font: lightgrey;
+}
+
+h1 {
+  padding: 8px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+h6 {
+  font-size: 26px;
+  font-weight: bolder;
+  color: black;
+  text-shadow: -1px -1px 0 #ad4b3b, 1px -1px 0 #ad4b3b, -1px 1px 0 #ad4b3b,
+    1px 1px 0 #ad4b3b;
+}
+
+p {
+  font-size: 18px;
+  font-weight: lighter;
+  padding: 10px;
+}
+
 .app-body {
   display: flex;
   flex-flow: row wrap;
+  justify-content: flex-end;
 }
 
 .header {
@@ -11,9 +50,54 @@
   align-items: center;
   justify-content: center;
   font-size: 6vh;
+  position: fixed;
+  z-index: 10;
 }
 
-.sidebar{
-    background: darkgray;
-    height: 90vh;
+.content {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding-top: 11vh;
+}
+
+.posts-content {
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  width: 75vw;
+}
+
+.intro-card {
+  background: black;
+  color: white;
+  width: 20vw;
+  height: 89vh;
+  border: 1px solid white;
+  padding: 15px;
+  margin-bottom: 5px;
+  opacity: 0.9;
+  position: fixed;
+  left: 5px;
+  top: 11vh;
+}
+
+.email-button {
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.story-card {
+  border: 1px solid white;
+  color: white;
+  padding: 15px;
+  margin: 5px;
+  background: black;
+  opacity: 0.8;
+}
+
+.medium-feed-image {
+  display: none;
 }
