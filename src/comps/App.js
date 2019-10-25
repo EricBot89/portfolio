@@ -10,18 +10,18 @@ class App extends React.Component {
     super(props);
     this.state = {
       posts: [],
-      projects: [],
+      projects: []
     };
   }
 
   async componentDidMount() {
     const podata = await axios.get("/posts");
-    const prdata = await axios.get("/projects")
+    const prdata = await axios.get("/projects");
     this.setState({ posts: podata.data.items, projects: prdata.data });
   }
 
   render() {
-    const { posts, projects} = this.state;
+    const { posts, projects } = this.state;
     return (
       <div className="app-body">
         <Header />
@@ -29,13 +29,14 @@ class App extends React.Component {
           <Intro />
           <div className="projects-posts">
             <div className="posts-content">
-              <h6>Github Projects</h6>
-              {projects.map( (project, idx) => (
-                <PortfolioCard project={project} key={idx} />
-              ))}
               <h6>Medium Articles</h6>
               {posts.map((story, idx) => (
                 <PortfolioCard story={story} key={idx} />
+              ))}
+
+              <h6>Github Projects</h6>
+              {projects.map((project, idx) => (
+                <PortfolioCard project={project} key={idx} />
               ))}
             </div>
           </div>

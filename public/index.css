@@ -26,6 +26,8 @@ h6 {
   font-size: 26px;
   font-weight: bolder;
   color: black;
+  padding: 8px;
+  margin-top: 5px;
   text-shadow: -1px -1px 0 #ad4b3b, 1px -1px 0 #ad4b3b, -1px 1px 0 #ad4b3b,
     1px 1px 0 #ad4b3b;
 }
