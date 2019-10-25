@@ -1,7 +1,12 @@
 import React from "react"
+import Sidebar from "./Sidebar"
+import Header from "./Header"
 
 const App = (props) => (
-    <h1>hello wold</h1>
+    <div className="app-body">
+        <Header />
+        <Sidebar />
+    </div>
 )
 
 

@@ -1,0 +1,19 @@
+.app-body {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.header {
+  background: #ad4b3b;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6vh;
+}
+
+.sidebar{
+    background: darkgray;
+    height: 90vh;
+}
