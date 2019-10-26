@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-dev": "nodemon server & webpack -w"
+    "start-dev": "nodemon server & webpack -w",
+    "start": "webpack"
   },
   "author": "",
   "license": "ISC",
