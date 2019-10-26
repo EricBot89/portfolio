@@ -8,7 +8,7 @@ const server = express();
 const PORT = 4545;
 
 
-const {githubToken}= require("../secrets")
+const githubToken = process.env.GITHUB_API_KEY
 const gqlClient = new GQL("https://api.github.com/graphql", {headers: {Authorization: `Bearer ${githubToken}`}})
 const projectsQuery = `{
   repositoryOwner(login: "EricBot89") {
