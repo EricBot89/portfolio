@@ -70,7 +70,6 @@ p {
   flex-flow: column;
   align-items: stretch;
   width: 75vw;
-  border:1px solid white;
 }
 
 .intro-card {
@@ -78,7 +77,6 @@ p {
   color: white;
   width: 20vw;
   height: 89vh;
-  border: 1px solid white;
   padding: 15px;
   opacity: 0.9;
   position: fixed;
@@ -95,11 +93,10 @@ p {
 
 .header-card{
   background: black;
-  border: 1px solid white;
+  border-bottom: 1px solid lightgrey;
 }
 
 .story-card {
-  border: 1px solid white;
   color: white;
   padding: 15px;
   background: black;
