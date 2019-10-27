@@ -7,10 +7,10 @@ const Info = props => (
     </h2>
     <ul>
       <li>
-        <i className="fab fa-github"></i>  Github
+        <a href="https://github.com/EricBot89"><i className="fab fa-github"></i>  Github</a>
       </li>
       <li>
-        <i className="fab fa-linkedin"></i>  Linkedin
+        <a href="https://www.linkedin.com/in/eric-s-loucks"><i className="fab fa-linkedin"></i>  Linkedin</a>
       </li>
     </ul>
     <a href="mailto:eloucks@gmail.com">
