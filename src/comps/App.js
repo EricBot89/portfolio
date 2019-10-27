@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import Intro from "./Intro";
+import Info from "./Info";
 import PortfolioCard from "./PortfolioCard";
 import Resume from "./Resume";
 
@@ -28,7 +28,7 @@ class App extends React.Component {
       <div className="app-body">
         <Header />
         <div className="content">
-          <Intro />
+          <Info />
           <div className="projects-posts">
             <div className="posts-content">
               <div className="header-card">
