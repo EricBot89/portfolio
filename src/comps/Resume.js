@@ -9,6 +9,7 @@ const Resume = props => (
       deployment pipelines and more mathematical topics like signal processing
       and data analysis.
     </p>
+    <hr></hr>
     <h5>Technical Skills:</h5>
     <ul>
       <li>
@@ -21,6 +22,7 @@ const Resume = props => (
       </li>
       <li>Experienced in Agile development methodologies</li>
     </ul>
+    <hr></hr>
     <h5>Education:</h5>
     <ul>
       <li>Fullstack Academy Of Code | Web Development immersive | 2019</li>
