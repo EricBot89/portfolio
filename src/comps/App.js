@@ -29,12 +29,18 @@ class App extends React.Component {
           <Intro />
           <div className="projects-posts">
             <div className="posts-content">
-              <h6>Medium Articles</h6>
+              <div className="header-card">
+                <h6>Medium Articles</h6>
+              </div>
+
               {posts.map((story, idx) => (
                 <PortfolioCard story={story} key={idx} />
               ))}
 
-              <h6>Github Projects</h6>
+              <div className="header-card">
+                <h6>Github Projects</h6>
+              </div>
+
               {projects.map((project, idx) => (
                 <PortfolioCard project={project} key={idx} />
               ))}
