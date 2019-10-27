@@ -19,7 +19,6 @@ const PorfolioCard = props => {
     );
   }
   if (props.project) {
-    console.log(props.project)
     const { name, description, url } = props.project.node;
     return (
       <div className="story-card">

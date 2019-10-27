@@ -1,36 +1,15 @@
 import React from "react";
 import Header from "./Header";
 import Intro from "./Intro";
-import PortfolioCard from "./MediumPost";
+import PortfolioCard from "./PortfolioCard";
 import Resume from "./Resume";
-import { GraphQLClient as GQL } from "graphql-request";
-import Feed from 'rss-to-json'
 
 import axios from "axios";
 
-const githubToken = process.env.GITHUB_API_KEY;
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.gqlClient = new GQL("https://api.github.com/graphql", {
-      headers: { Authorization: `Bearer ${githubToken}` }
-    });
-    this.projectsQuery = `{
-      repositoryOwner(login: "EricBot89") {
-       ... on User {
-          pinnedRepositories(first: 6) {
-          edges {
-            node {
-               name,
-               description,
-               url
-              }
-           }
-         }
-       }
-     }
-    }`;
     this.state = {
       posts: [],
       projects: []
@@ -38,19 +17,9 @@ class App extends React.Component {
   }
 
   async componentDidMount() {
-    // const podata = await axios.get("/posts");
-    // const prdata = await axios.get("/projects");
-
-    Feed.load("https://medium.com/feed/@eloucks", (err, rss) => {
-      if(!err) {
-        this.setState({posts: rss})
-      }
-    })
-
-    const data = await this.gqlClient.request(this.projectsQuery)
-    const projects = data.repositoryOwner.pinnedRepositories.edges
-
-    this.setState({ projects});
+    const podata = await axios.get("https://nameless-wildwood-70363.herokuapp.com/posts");
+    const prdata = await axios.get("https://nameless-wildwood-70363.herokuapp.com/projects");
+    this.setState({ projects: prdata.data, posts: podata.data.items });
   }
 
   render() {

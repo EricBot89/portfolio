@@ -5,7 +5,7 @@ const GQL = require("graphql-request").GraphQLClient
 
 const server = express();
 
-const PORT = 4545;
+const PORT = 4949;
 
 
 const githubToken = process.env.GITHUB_API_KEY
