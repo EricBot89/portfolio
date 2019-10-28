@@ -2,7 +2,7 @@ import React from "react";
 import { Link, BrowserRouter as Router } from "react-router-dom";
 
 const Info = props => (
-  <div className="intro-card">
+  <div className="info-card">
     <h2>NYC based Developer</h2>
     <ul>
       <Router>

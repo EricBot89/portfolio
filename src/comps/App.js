@@ -43,9 +43,9 @@ class App extends React.Component {
                   <Resume />
                 </div>
 
-                <Section data={posts} title="Medium Articles" type="story" />
+                <Section data={posts} title="Medium Articles" type="story" display={true} />
 
-                <Section data={projects} title="Github Pins" type="project"/>
+                <Section data={projects} title="Github Pins" type="project" disply={false}/>
 
               </div>
             </Router>

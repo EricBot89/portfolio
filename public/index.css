@@ -106,7 +106,7 @@ li{
 
 }
 
-.intro-card {
+.info-card {
   background: black;
   color: white;
   width: 20vw;
@@ -131,6 +131,13 @@ li{
   background: black;
   border-bottom: 1px solid lightgrey;
   display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-dispay-toggle{
+  margin-right: 2.5vw;
 }
 
 .story-card {
