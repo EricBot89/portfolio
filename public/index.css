@@ -7,6 +7,19 @@ body {
   font: lightgrey;
 }
 
+a{
+  font-style: none;
+  text-decoration: none;
+  color: darkgray;
+  font-weight: lighter;
+
+}
+
+a:hover{
+  color: white;
+  font-weight: normal;
+}
+
 h1 {
   padding: 8px;
   margin-left: 21px;
@@ -79,11 +92,18 @@ li{
   padding-top: 11vh;
 }
 
-.posts-content {
+.scroling-content {
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
+  position: fixed;
+  left: 0px;
+  top: 10vh;
   align-items: stretch;
-  width: 75.5vw;
+}
+
+.posts-content{
+  margin-left:22vw;
+
 }
 
 .intro-card {
@@ -92,13 +112,11 @@ li{
   width: 20vw;
   height: 89vh;
   padding: 15px;
-  position: fixed;
-  left: 1vw;
-  top: 11vh;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
 }
 
 .email-button {
@@ -112,6 +130,7 @@ li{
 .header-card{
   background: black;
   border-bottom: 1px solid lightgrey;
+  display: flex;
 }
 
 .story-card {
@@ -119,6 +138,7 @@ li{
   padding: 15px;
   background: black;
   opacity: 0.8;
+  color: white;
 }
 
 .medium-feed-image {
