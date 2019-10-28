@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "./Header";
 import Info from "./Info";
-import PortfolioCard from "./PortfolioCard";
 import Resume from "./Resume";
+import Section from "./Section";
 import { BrowserRouter as Router } from "react-router-dom";
 import axios from "axios";
 
@@ -43,23 +43,10 @@ class App extends React.Component {
                   <Resume />
                 </div>
 
-                <div className="header-card">
-                  <h6>Medium Articles</h6>
-                  <i className="fas fa-angle-down" />
-                </div>
+                <Section data={posts} title="Medium Articles" type="story" />
 
-                {posts.map((story, idx) => (
-                  <PortfolioCard story={story} key={idx} />
-                ))}
+                <Section data={projects} title="Github Pins" type="project"/>
 
-                <div className="header-card">
-                  <h6>Github Projects</h6>
-                  <i className="fas fa-angle-up" />
-                </div>
-
-                {projects.map((project, idx) => (
-                  <PortfolioCard project={project} key={idx} />
-                ))}
               </div>
             </Router>
           </div>
